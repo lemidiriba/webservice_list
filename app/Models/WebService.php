@@ -17,6 +17,7 @@ class WebService extends Model
     protected $fillable = [
         'name',
         'address',
+        'description',
         'image_name',
         'created_by_id',
     ];

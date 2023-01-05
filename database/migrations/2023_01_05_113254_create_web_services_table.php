@@ -19,6 +19,7 @@ class CreateWebServicesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('address');
+            $table->text('description');
             $table->string('image_name');
             $table->unsignedBigInteger('created_by_id');
             $table->foreign('created_by_id')->references('id')->on('users');

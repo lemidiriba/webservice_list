@@ -1,6 +1,7 @@
 created:
     - database/factories/WebServiceFactory.php
-    - database/migrations/2023_01_05_113122_create_web_services_table.php
+    - database/migrations/2023_01_05_113254_create_web_services_table.php
     - app/Models/WebService.php
 models:
-    WebService: { name: string, address: string, image_name: string, created_by_id: 'unsignedBigInteger foreign:users.id' }
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    WebService: { name: string, address: string, description: text, image_name: string, created_by_id: 'unsignedBigInteger foreign:users.id' }

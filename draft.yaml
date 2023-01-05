@@ -2,5 +2,6 @@ models:
   WebService:
     name: string
     address: string
+    description: text
     image_name: string
     created_by_id: unsignedBigInteger foreign:users.id 

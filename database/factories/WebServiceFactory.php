@@ -26,6 +26,7 @@ class WebServiceFactory extends Factory
         return [
             'name' => $this->faker->name,
             'address' => $this->faker->word,
+            'description' => $this->faker->text,
             'image_name' => $this->faker->word,
             'created_by_id' => User::factory(),
         ];
