@@ -1,0 +1,6 @@
+models:
+  WebService:
+    name: string
+    address: string
+    image_name: string
+    created_by_id: unsignedBigInteger foreign:users.id 

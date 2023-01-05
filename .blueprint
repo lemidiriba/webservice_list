@@ -1,0 +1,6 @@
+created:
+    - database/factories/WebServiceFactory.php
+    - database/migrations/2023_01_05_113122_create_web_services_table.php
+    - app/Models/WebService.php
+models:
+    WebService: { name: string, address: string, image_name: string, created_by_id: 'unsignedBigInteger foreign:users.id' }
