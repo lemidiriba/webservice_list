@@ -25,7 +25,9 @@ class WebServiceRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'name' => 'required|unique:web_services,name',
+            'address' => 'required|unique:web_services,address',
+            'description' => 'required'
         ];
     }
 
